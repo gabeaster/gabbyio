@@ -1,0 +1,103 @@
+ul {
+  list-style-type: none; }
+
+body {
+  margin: 0; }
+
+.App {
+  background-color: #f4f7e3;
+  color: #37353b;
+  font-family: "Lato", sans-serif; }
+
+.nav-container {
+  position: sticky;
+  background-image: url(../../img/old-map.png);
+  background-size: 700px;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  width: 18%;
+  height: 100vh;
+  border-right: 1px solid #888;
+  color: #37353b;
+  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.5); }
+  .nav-container .overlay {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(225, 118, 24, 0.75); }
+  .nav-container .logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .nav-container .logo-container .logo {
+      width: 120px;
+      height: 120px;
+      background: #37353b;
+      border-radius: 50%;
+      margin-top: 10px; }
+    .nav-container .logo-container .tag-line {
+      height: 15px;
+      padding: 10px 0 0 0; }
+  .nav-container .links-container {
+    margin-top: 135px;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px;
+    padding: 0 5px 28px 0; }
+    .nav-container .links-container .list-item {
+      color: #37353b;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 40px;
+      margin-top: 10px; }
+    .nav-container .links-container .selected-link {
+      float: right;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-right: 20px solid #68cfb9;
+      border-bottom: 12px solid transparent;
+      position: absolute;
+      top: 285px;
+      left: 326px; }
+  .nav-container .social-container {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 100%;
+    background-color: #37353b;
+    color: #68cfb9;
+    width: 100.27%; }
+    .nav-container .social-container div {
+      width: 50px;
+      height: 50px;
+      margin: 5px; }
+      .nav-container .social-container div .fab {
+        position: relative;
+        top: 36%;
+        left: 31.5%;
+        transform: scale(1.8); }
+        .nav-container .social-container div .fab:hover {
+          color: #f4f7e3; }
+    .nav-container .social-container .twitter .fab {
+      left: 33%; }
+  .nav-container .copyright-info {
+    position: fixed;
+    bottom: 0;
+    width: 18%;
+    text-align: center;
+    font-size: 0.9rem; }
+
+.content {
+  margin-left: 20%;
+  padding-left: 20px;
+  width: auto;
+  display: flex;
+  position: absolute;
+  overflow: auto;
+  top: 0; }
