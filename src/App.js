@@ -1,13 +1,17 @@
 import React from "react";
-import "./Styles/css/index.css";
+import "./index.css";
 import Navbar from "./Components/Nav & Foot/Navbar";
+import Home from "./Components/Home";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <div className="content">
-        <h1>Hello World</h1>
+        <div className="context-text">
+          <h1>hi, i'm gabby.</h1>
+          <h2>let's build our dreams together.</h2>
+        </div>
       </div>
     </div>
   );

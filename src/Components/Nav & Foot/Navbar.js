@@ -5,8 +5,17 @@ function Navbar() {
     <div className="nav-container">
       <div className="overlay">
         <div className="logo-container">
-          <div className="logo"></div>
-          <div className="tag-line">Making dope shit.</div>
+          <img
+            className="logo-image"
+            src={require("../../assets/gabby_avatar_circle.png")}
+            alt="logo img of gabby smiling in glasses"
+          />
+          <div className="tag-line">
+            Front End Web Dev <br />
+            Collaborator
+            <br />
+            Life Long Learner
+          </div>
         </div>
 
         <ul className="links-container">
@@ -30,16 +39,24 @@ function Navbar() {
         </ul>
         <div className="social-container">
           <div className="linkedin">
-            <i class="fab fa-linkedin-in fa-lg"></i>
+            <a href="https://www.linkedin.com/in/gabbyeaster/">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
           </div>
           <div className="github">
-            <i class="fab fa-github fa-lg"></i>
+            <a href="https://github.com/gabeaster">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
           </div>
           <div className="twitter">
-            <i class="fab fa-twitter fa-lg"></i>
+            <a href="https://twitter.com/devGABBYdev">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
           </div>
           <div className="Instagram">
-            <i class="fab fa-instagram fa-lg"></i>
+            <a href="https://www.instagram.com/gabmonsterrawr/">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
           </div>
         </div>
       </div>
