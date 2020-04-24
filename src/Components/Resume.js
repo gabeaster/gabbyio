@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 function Resume() {
   return (
-    <div className="resume-container">
+    <div className="components">
+      <Navbar />
       <div className="content-container">
         <h1>Content Title</h1>
         <p>

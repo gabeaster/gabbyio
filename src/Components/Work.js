@@ -1,21 +1,78 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 function Work() {
   return (
-    <div className="work-container">
+    <div className="components">
+      <Navbar />
       <div className="content-container">
-        <h1>Content Title</h1>
-        <p>
-          Voluptate esse enim commodo magna ea. Reprehenderit sint magna dolore
-          velit ea id. Sint sit officia anim magna cillum et qui elit.
-        </p>
-        <p>
-          Eiusmod ad commodo occaecat ullamco adipisicing eu in. Adipisicing ut
-          deserunt eiusmod dolore sit eiusmod dolor quis sint irure nulla sunt
-          voluptate. Cupidatat nulla culpa irure nisi incididunt id. Amet
-          consectetur aliqua nisi nulla officia in. Commodo sunt velit fugiat
-          pariatur eiusmod.
-        </p>
+        <h1>My Projects</h1>
+        <div className="projects-container">
+          <div className="project-card">
+            <h2>Capture</h2>
+            <img
+              src={require("../assets/CaptureImage.PNG")}
+              alt="preview of marketing website for Capture App"
+            />
+            <div className="project-details">
+              <div className="details-container">
+                <div className="project-links">
+                  <a
+                    className="button"
+                    href="https://ft-expat-journal-1.github.io/Expat-Journal-Marketing-Page/index.html"
+                    target="_blank"
+                  >
+                    check it out
+                  </a>
+                  <a
+                    className="github-button"
+                    href="https://github.com/FT-Expat-Journal-1/Expat-Journal-Marketing-Page"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                </div>
+                <p>
+                  Capture is a photo-blogging platform for travellers to
+                  document their journeys. I was the Front-End Web Developer
+                  responsible for building the entire marketing website. In
+                  collaboration with the UI/UX designer, I was able to produce a
+                  fully responsive, attractive website to accompany the
+                  functioning app. I used Trello to set tasks to complete with
+                  deadlines to ensure the project was completed on time and to
+                  specifications.
+                </p>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>LESS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="project-card">
+            <h1></h1>
+            <img
+              src={require("../assets/todo-list.PNG")}
+              alt="todo list with one task completed"
+            />
+            <div className="project-details">
+              <div className="details-container">
+                <p></p>
+                <div className="details-right">
+                  <ul>
+                    <li></li>
+                  </ul>
+                  <a className="button" href="link to project" target="_blank">
+                    check it out>
+                  </a>
+                  <a className="github-button" href="" target="_blank">
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
