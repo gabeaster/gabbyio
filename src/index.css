@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap");
+.about-containers {
+  height: 33%;
+  border: red 1px solid;
+}
+
 a {
   text-decoration: none !important;
   color: #c7cdd0;

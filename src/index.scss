@@ -1,7 +1,7 @@
 //import
 //font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap");
-
+@import "./Components/about.scss";
 //Variables
 //Colors
 $primary-color: #2b3844;
@@ -200,6 +200,7 @@ i {
   float: right;
   background-color: $dark-color;
   overflow: hidden;
+
   //projects styles
   .projects-container {
     display: flex;
