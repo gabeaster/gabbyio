@@ -13,10 +13,10 @@ function Navbar() {
             alt="logo img of gabby smiling in glasses"
           />
           <div className="tag-line">
-            <h3>SITE UNDER CONSTRUCTIONNN</h3>
-            <p>Front End Web Dev</p>
-            <p>Collaborator</p>
-            <p>Life Long Learner</p>
+            <p>
+              Front End Developer. Collaborator. <br />
+              Life Long Learner.
+            </p>
           </div>
         </div>
 
@@ -26,7 +26,6 @@ function Navbar() {
               Home
             </Link>
             {/* //the selected link thing needs to be done in js */}
-            <div className="selected-link"></div>
           </li>
           <li className="list-item About">
             <Link to={"/about"} className="list-item About">
