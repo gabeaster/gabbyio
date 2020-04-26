@@ -1,24 +1,58 @@
+// Customize this 'myform.js' script and add it to your JS bundle.
+// Then import it with 'import MyForm from "./myform.js"'.
+// Finally, add a <MyForm/> element whereever you wish to display the form.
+
 import React from "react";
 
-function Contact() {
-  return (
-    <div className="contact-container">
-      <div className="content-container">
-        <h1>Content Title</h1>
-        <p>
-          Voluptate esse enim commodo magna ea. Reprehenderit sint magna dolore
-          velit ea id. Sint sit officia anim magna cillum et qui elit.
-        </p>
-        <p>
-          Eiusmod ad commodo occaecat ullamco adipisicing eu in. Adipisicing ut
-          deserunt eiusmod dolore sit eiusmod dolor quis sint irure nulla sunt
-          voluptate. Cupidatat nulla culpa irure nisi incididunt id. Amet
-          consectetur aliqua nisi nulla officia in. Commodo sunt velit fugiat
-          pariatur eiusmod.
-        </p>
-      </div>
-    </div>
-  );
-}
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "",
+    };
+  }
 
-export default Contact;
+  render() {
+    const { status } = this.state;
+    return (
+      <div className="components contact">
+        <form
+          className="contact-form"
+          onSubmit={this.submitForm}
+          action="https://formspree.io/xgenwwnj"
+          method="POST"
+        >
+          <h2>My dream is bringing yours to life. How can I help?</h2>
+          <label>Name:</label>
+          <input type="text" name="name" />
+          <label>Email:</label>
+          <input type="email" name="email" />
+          <label>Message:</label>
+          <textarea type="text" name="message" />
+          {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+          {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        </form>
+      </div>
+    );
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+}

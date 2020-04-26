@@ -1,20 +1,28 @@
 import React from "react";
-import "./index.css";
-import Navbar from "./Components/Nav & Foot/Navbar";
+import { Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
+import About from "./Components/About";
+import Work from "./Components/Work";
+import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Navbar from "./Components/Navbar";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
-      <div className="content">
-        <div className="context-text">
-          <h1>hi, i'm gabby.</h1>
-          <h2>let's build our dreams together.</h2>
-        </div>
+      <div className="content-container">
+        {/* <div className="twinkling"></div> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/work" component={Work} />
+          <Route path="/resume" component={Resume} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
       </div>
-    </div>
+    </>
   );
 }
-
 export default App;
