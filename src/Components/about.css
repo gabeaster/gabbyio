@@ -1,5 +1,159 @@
 .about-containers {
-  height: 33%;
-  border: red 1px solid;
+  height: 304px;
+}
+
+.item {
+  border: 5px solid #736364;
+}
+
+#top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 3.6rem;
+}
+
+#top-container .top-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 84%;
+}
+
+#top-container .top-item-container .top-item {
+  width: 360px;
+  height: 250px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  color: #2b3844;
+  background-color: #c7cdd0;
+  border-radius: 30px;
+  padding: 10px;
+  z-index: 2;
+}
+
+#top-container .top-item-container .top-item:hover {
+  opacity: 0;
+}
+
+#top-container .top-flip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 84%;
+}
+
+#top-container .top-flip-container .flip-item {
+  width: 360px;
+  height: 250px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  color: #2b3844;
+  background-color: #c7cdd0;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+#top-container .top-flip-container .flip-item:hover .top-item {
+  opacity: 0;
+}
+
+#middle-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 34%;
+  left: 51%;
+  color: #2b3844;
+  background-color: #c7cdd0;
+  z-index: 3;
+}
+
+#middle-container h2 {
+  font-size: 10rem;
+  position: relative;
+  bottom: 126px;
+  right: 3px;
+}
+
+#bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3.6rem;
+  position: absolute;
+  bottom: 0;
+  width: 84%;
+}
+
+#bottom-container .bottom-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+
+#bottom-container .bottom-item-container .bottom-item {
+  width: 360px;
+  height: 250px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  color: #2b3844;
+  background-color: #c7cdd0;
+  border-radius: 30px;
+  padding: 10px;
+  z-index: 2;
+}
+
+#bottom-container .bottom-item-container .bottom-item:hover {
+  opacity: 0;
+}
+
+#bottom-container .bottom-flip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+
+#bottom-container .bottom-flip-container .flip-item {
+  width: 360px;
+  height: 250px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  color: #2b3844;
+  background-color: #c7cdd0;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+#bottom-container .bottom-flip-container .flip-item:hover .top-item {
+  opacity: 0;
 }
 /*# sourceMappingURL=about.css.map */

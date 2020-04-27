@@ -1,5 +1,6 @@
 //import
 //font
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap");
 @import "./Components/about.scss";
 //Variables
@@ -8,7 +9,7 @@ $primary-color: #2b3844;
 $primary-color-overlay: #2528309d;
 $secondary-color: #736364;
 $light-color: #c7cdd0;
-$dark-color: #222222;
+$dark-color: #000;
 
 //Fonts
 $primary-font: "Montserrat", sans-serif;
@@ -20,6 +21,7 @@ a {
 
 #root {
   display: flex;
+  overflow: hidden;
 }
 
 ul {
@@ -194,7 +196,7 @@ i {
 
 .content-container {
   height: 100vh;
-  width: 84%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   float: right;
@@ -391,6 +393,14 @@ i {
 }
 
 //Background Stars and twinkle
+.about,
+.work,
+.resume,
+.contact {
+  background-image: url(./assets/stars.png);
+  height: 100%;
+}
+
 @keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -429,13 +439,13 @@ i {
 
 .twinkling {
   background: transparent url(../src/assets/twinkling.png) repeat top center;
-  z-index: 3;
+  z-index: 1;
   animation: move-twink-back 200s linear infinite;
 }
 
 .clouds {
   background: transparent url(./assets/clouds1.png) repeat top center;
-  z-index: 3;
+  z-index: 1;
   animation: move-clouds-back 200s linear infinite;
-  opacity: 0.4;
+  opacity: 0.45;
 }
