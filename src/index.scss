@@ -205,6 +205,7 @@ i {
 
   //projects styles
   .projects-container {
+    z-index: 3;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -301,6 +302,7 @@ i {
 
 //Contact styles
 .contact-form {
+  z-index: 3;
   display: flex;
   position: absolute;
   top: 20%;
@@ -390,6 +392,10 @@ i {
     position: relative;
     left: 5000px;
   }
+}
+
+.resume-container {
+  z-index: 3;
 }
 
 //Background Stars and twinkle

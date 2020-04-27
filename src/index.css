@@ -390,6 +390,7 @@ i:hover {
 }
 
 .content-container .projects-container {
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,6 +526,7 @@ i:hover {
 }
 
 .contact-form {
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,6 +625,10 @@ i:hover {
 .work .to-do {
   position: relative;
   left: 5000px;
+}
+
+.resume-container {
+  z-index: 3;
 }
 
 .about,

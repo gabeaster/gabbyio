@@ -3,6 +3,8 @@ import React from "react";
 function Work() {
   return (
     <div className="components work">
+      <div className="twinkling"></div>
+      <div className="clouds"></div>
       <div className="projects-container">
         <div className="selected-link A"></div>
         <div className="selected-link B"></div>

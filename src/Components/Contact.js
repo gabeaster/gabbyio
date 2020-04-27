@@ -17,6 +17,8 @@ export default class Contact extends React.Component {
     const { status } = this.state;
     return (
       <div className="components contact">
+        <div className="twinkling"></div>
+        <div className="clouds"></div>
         <form
           className="contact-form"
           onSubmit={this.submitForm}
