@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Page } from "react-pdf";
+
 import resumePDF from "../assets/resume.pdf";
 function Resume() {
   return (
@@ -7,9 +7,17 @@ function Resume() {
       <div className="twinkling"></div>
       <div className="clouds"></div>
       <div className="resume-container">
-        <Document file={resumePDF} onLoadSuccess={this.onDocumentLoadSuccess}>
-          <Page pageNumber={1} />
-        </Document>
+        {resumePDF && (
+          <iframe
+            src={`${resumePDF}#zoom=100`}
+            marginheight="0"
+            marginwidth="0"
+            width="100%"
+            height="1150px"
+            allowtransparency="true"
+            style={{ background: "#2b3844" }}
+          />
+        )}
       </div>
     </div>
   );
