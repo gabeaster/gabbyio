@@ -9,16 +9,18 @@ function Todo() {
             className="button"
             href="https://todo-with-react-psi.now.sh/"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="fas fa-eye fa-3x"></i>
+            <i className="fas fa-eye fa-3x"></i>
           </a>
           <h2>Todo App</h2>
           <a
             className="github-button"
             href="https://github.com/gabeaster/React-Todo"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="fab fa-github fa-3x"></i>
+            <i className="fab fa-github fa-3x"></i>
           </a>
         </div>
         <div className="proj-img-container">

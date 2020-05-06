@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-import ReactHover from "react-hover";
+import React, { useState } from "react";
 
 function About() {
   //pseudo
