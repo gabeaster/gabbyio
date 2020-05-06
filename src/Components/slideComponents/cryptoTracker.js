@@ -25,7 +25,7 @@ function cryptoTracker() {
         </div>
         <div className="proj-img-container">
           <img
-            src={require("../../assets/DarkMode.PNG")}
+            src={require("../../assets/crypto.JPG")}
             alt="preview of crypto tracker App"
           />
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/todo-list.PNG";
+
 function Todo() {
   return (
     <>
@@ -25,7 +25,8 @@ function Todo() {
         </div>
         <div className="proj-img-container">
           <img
-            src={require("../../assets/to-do-list.PNG")}
+            className="proj-img"
+            src={require("../../assets/todolist.JPG")}
             alt="preview of to-do App"
           />
         </div>

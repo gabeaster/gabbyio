@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/CaptureImage.png";
 
 function Capture() {
   return (
@@ -26,7 +25,8 @@ function Capture() {
         </div>
         <div className="proj-img-container">
           <img
-            src={require("../../assets/CaptureImage.png")}
+            className="proj-img"
+            src={require("../../assets/CaptureImage.JPG")}
             alt="preview of marketing website for Capture App"
           />
         </div>
