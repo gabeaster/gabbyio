@@ -29,12 +29,12 @@ function Slider() {
         );
       })}
 
-      <button id="back-btn" class="slide-btn" onClick={goBack}>
+      <button id="back-btn" className="slide-btn" onClick={goBack}>
         {/* <div className="selected-link A"></div>
         <div className="selected-link D"></div> */}
         <h3>Back</h3>
       </button>
-      <button id="next-btn" class="slide-btn" onClick={goNext}>
+      <button id="next-btn" className="slide-btn" onClick={goNext}>
         {/* <div className="selected-link B"></div>
         <div className="selected-link C"></div> */}
         <h3>Next</h3>

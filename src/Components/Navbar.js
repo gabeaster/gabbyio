@@ -6,7 +6,6 @@ function Navbar() {
     <div className="nav-container">
       <div className="overlay">
         <div className="logo-container">
-          {/* this is a change */}
           <img
             className="logo-image"
             src={require("../assets/Gabby Avatar mod transparent2.png")}
@@ -52,11 +51,6 @@ function Navbar() {
               Work
             </NavLink>
           </li>
-          {/* <li className="list-item Resume">
-            <NavLink to={"/resume"} className="list-item Resume">
-              Resume
-            </NavLink>
-          </li> */}
           <li className="list-item Contact animated bounceInLeft">
             <NavLink
               exact

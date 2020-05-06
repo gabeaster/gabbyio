@@ -9,21 +9,23 @@ function cryptoTracker() {
             className="button"
             href="https://dark-mode-sable.now.sh/"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="fas fa-eye fa-3x"></i>
+            <i className="fas fa-eye fa-3x"></i>
           </a>
           <h2>CryptoTracker</h2>
           <a
             className="github-button"
             href="https://github.com/gabeaster/dark-mode"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="fab fa-github fa-3x"></i>
+            <i className="fab fa-github fa-3x"></i>
           </a>
         </div>
         <div className="proj-img-container">
           <img
-            src={require("../../assets/DarkMode.PNG")}
+            src={require("../../assets/crypto.JPG")}
             alt="preview of crypto tracker App"
           />
         </div>

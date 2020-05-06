@@ -85,7 +85,7 @@
   display: flex;
 }
 
-.projects-container .project-card .proj-img-container img {
+.projects-container .project-card .proj-img-container .proj-img {
   max-width: 96%;
   height: auto;
   margin: 15px;

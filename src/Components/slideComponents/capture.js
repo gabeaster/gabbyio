@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/CaptureImage.PNG";
 
 function Capture() {
   return (
@@ -10,21 +9,24 @@ function Capture() {
             className="button"
             href="https://ft-expat-journal-1.github.io/Expat-Journal-Marketing-Page/index.html"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="fas fa-eye fa-3x"></i>
+            <i className="fas fa-eye fa-3x"></i>
           </a>
           <h2>Capture</h2>
           <a
             className="github-button"
             href="https://github.com/FT-Expat-Journal-1/Expat-Journal-Marketing-Page"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="fab fa-github fa-3x"></i>
+            <i className="fab fa-github fa-3x"></i>
           </a>
         </div>
         <div className="proj-img-container">
           <img
-            src={require("../../assets/CaptureImage.PNG")}
+            className="proj-img"
+            src={require("../../assets/CaptureImage.JPG")}
             alt="preview of marketing website for Capture App"
           />
         </div>
