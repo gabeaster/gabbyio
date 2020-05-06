@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
         <div className="twinkling"></div>
         <div className="clouds"></div>
         <form
-          className="contact-form"
+          className="contact-form animated bounceInRight"
           onSubmit={this.submitForm}
           action="https://formspree.io/xgenwwnj"
           method="POST"

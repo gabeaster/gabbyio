@@ -1,70 +1,160 @@
-.about-containers {
-  height: 304px;
-}
-
-.item {
-  border: 5px solid #736364;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Open+Sans&display=swap");
 #top-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   font-size: 3.6rem;
+  color: #fff;
 }
 
-#top-container .top-item-container {
+.top-item-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 84%;
+  overflow: hidden;
 }
 
-#top-container .top-item-container .top-item {
-  width: 360px;
-  height: 250px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0 auto;
-  color: #2b3844;
+.top-item-container .cloud-wrapper {
+  position: relative;
+  top: 19px;
+  left: -25px;
+  height: 330px;
+  min-width: 527px;
+  overflow: hidden;
+}
+
+.top-item-container .cloud-wrapper .cloud-group {
+  z-index: 1000 !important;
+  opacity: 0.1;
+  position: relative;
+  top: 140px;
+  left: -18px;
+  height: 200px;
+  width: 200px;
+  -webkit-transform: rotate(352deg) scale(1.8);
+          transform: rotate(352deg) scale(1.8);
+}
+
+.top-item-container .cloud-wrapper .cloud-group .a {
+  position: relative;
+  height: 150px;
+  top: 31px;
+  width: 150px;
+  border-radius: 50%;
   background-color: #c7cdd0;
+  left: 152px;
+}
+
+.top-item-container .cloud-wrapper .cloud-group .b {
+  position: relative;
+  left: 82px;
+  bottom: 76px;
+  height: 84px;
+  width: 96px;
+  border-radius: 50%;
+  background-color: #c7cdd0;
+}
+
+.top-item-container .cloud-wrapper .cloud-group .c {
+  position: relative;
+  left: 204px;
+  height: 103px;
+  bottom: 100px;
+  width: 103px;
+  border-radius: 50%;
+  background-color: #c7cdd0;
+}
+
+.top-item-container .cloud-wrapper .cloud-group .d {
+  position: relative;
+  left: 108px;
+  bottom: 241px;
+  height: 120px;
+  width: 149px;
+  border-radius: 50%;
+  background-color: #c7cdd0;
+  -webkit-transform: rotate(-46deg);
+          transform: rotate(-46deg);
+}
+
+.top-item-container .cloud-wrapper .cloud-group .e {
+  position: relative;
+  left: 192px;
+  bottom: 426px;
+  height: 145px;
+  width: 155px;
+  border-radius: 50%;
+  background-color: #c7cdd0;
+}
+
+.top-item-container .cloud-wrapper .cloud-group .f {
+  position: relative;
+  left: 104px;
+  bottom: 587px;
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  background-color: #c7cdd0;
+}
+
+.top-item-container .cloud-wrapper .cloud-group .g {
+  position: relative;
+  left: 186px;
+  bottom: 713px;
+  height: 72px;
+  width: 74px;
+  border-radius: 50%;
+  background-color: #c7cdd0;
+}
+
+.top-item {
+  width: 263px;
+  position: relative;
+  left: 150px;
+  height: 90px;
+  top: -31px;
+  color: #fff;
+  background-color: transparent;
   border-radius: 30px;
-  padding: 10px;
-  z-index: 2;
+  z-index: 2005 !important;
 }
 
-#top-container .top-item-container .top-item:hover {
-  opacity: 0;
+.learner-container {
+  left: 197px;
 }
 
-#top-container .top-flip-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.educator-container {
+  left: 182px;
+}
+
+.paragraph-container {
+  width: 50%;
+  height: 300px;
   position: absolute;
-  width: 84%;
+  top: 50%;
+  left: 32.5%;
+  -webkit-transition: all ease-in 200ms;
+  transition: all ease-in 200ms;
 }
 
-#top-container .top-flip-container .flip-item {
-  width: 360px;
-  height: 250px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.paragraph-container .flip-item {
+  opacity: 1;
+  position: absolute;
   margin: 0 auto;
-  color: #2b3844;
-  background-color: #c7cdd0;
+  color: #c7cdd0;
+  background: transparent;
   border-radius: 30px;
   padding: 10px;
-  font-size: 1rem;
-  z-index: 1;
+  font-size: 2rem;
+  z-index: 3000;
 }
 
-#top-container .top-flip-container .flip-item:hover .top-item {
-  opacity: 0;
+.paragraph-container .show {
+  display: block;
 }
 
 #middle-container {
@@ -78,82 +168,31 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   position: absolute;
-  top: 34%;
+  top: 75%;
   left: 51%;
   color: #2b3844;
   background-color: #c7cdd0;
   z-index: 3;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
 }
 
 #middle-container h2 {
   font-size: 10rem;
   position: relative;
-  bottom: 126px;
-  right: 3px;
+  right: 3%;
 }
 
-#bottom-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.6rem;
+.hover-img {
   position: absolute;
-  bottom: 0;
-  width: 84%;
-}
-
-#bottom-container .bottom-item-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  width: 100%;
-}
-
-#bottom-container .bottom-item-container .bottom-item {
-  width: 360px;
-  height: 250px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0 auto;
-  color: #2b3844;
-  background-color: #c7cdd0;
-  border-radius: 30px;
-  padding: 10px;
-  z-index: 2;
-}
-
-#bottom-container .bottom-item-container .bottom-item:hover {
-  opacity: 0;
-}
-
-#bottom-container .bottom-flip-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  width: 100%;
-}
-
-#bottom-container .bottom-flip-container .flip-item {
-  width: 360px;
-  height: 250px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0 auto;
-  color: #2b3844;
-  background-color: #c7cdd0;
-  border-radius: 30px;
-  padding: 10px;
+  bottom: 62%;
+  left: 54%;
+  z-index: 2000;
   font-size: 1rem;
-  z-index: 1;
-}
-
-#bottom-container .bottom-flip-container .flip-item:hover .top-item {
-  opacity: 0;
 }
 /*# sourceMappingURL=about.css.map */
