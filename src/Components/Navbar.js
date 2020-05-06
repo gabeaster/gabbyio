@@ -9,7 +9,7 @@ function Navbar() {
           {/* this is a change */}
           <img
             className="logo-image"
-            src={require("../assets/Gabby Avatar mod transparent.png")}
+            src={require("../assets/Gabby Avatar mod transparent2.png")}
             alt="logo img of gabby smiling in glasses"
           />
           <div className="tag-line">
