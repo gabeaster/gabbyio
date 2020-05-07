@@ -23,7 +23,6 @@ a {
 #root {
   display: flex;
   overflow: hidden;
-  height: 100%;
 }
 
 ul {
@@ -201,7 +200,7 @@ p {
 
 //HOME STYLES
 .home-twinkle {
-  height: 969px;
+  height: 100vh;
   width: 100%;
   background: url("./assets/stars.png") repeat top center;
   z-index: 3;
@@ -216,7 +215,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hiddeng;
+  overflow: hidden;
   z-index: 1000;
 }
 
