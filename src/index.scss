@@ -23,7 +23,7 @@ a {
 #root {
   display: flex;
   overflow: hidden;
-  min-height: 969px;
+  height: 100%;
 }
 
 ul {
@@ -341,7 +341,7 @@ p {
 .work,
 .contact {
   background-image: url(./assets/stars.png);
-  min-height: 969px;
+  height: 100vh;
   overflow: hidden;
 }
 
