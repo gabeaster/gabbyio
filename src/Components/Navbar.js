@@ -43,11 +43,11 @@ function Navbar() {
           <li className="list-item Work animated bounceInLeft ">
             <NavLink
               exact
-              to={"/work"}
+              to={"/projects"}
               className="list-item Work"
               activeClassName="list-item Work active"
             >
-              Work
+              Projects
             </NavLink>
           </li>
           <li className="list-item Contact animated bounceInLeft">
