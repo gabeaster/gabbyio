@@ -29,7 +29,6 @@ function Navbar() {
             >
               Home
             </NavLink>
-            {/* //the selected NavLink thing needs to be done in js */}
           </li>
           <li className="list-item About animated bounceInLeft">
             <NavLink
@@ -65,23 +64,39 @@ function Navbar() {
 
         <div className="social-container">
           <div className="linkedin">
-            <a href="https://www.linkedin.com/in/gabbyeaster/">
+            <a
+              href="https://www.linkedin.com/in/gabbyeaster/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-linkedin-in fa-lg"></i>
             </a>
           </div>
           <div className="github">
-            <a href="https://github.com/gabeaster">
+            <a
+              href="https://github.com/gabeaster"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-github fa-lg"></i>
             </a>
           </div>
           <div className="twitter">
             {" "}
-            <a href="https://twitter.com/devGABBYdev">
+            <a
+              href="https://twitter.com/devGABBYdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-twitter fa-lg"></i>
             </a>
           </div>
           <div className="Instagram">
-            <a href="https://www.instagram.com/gabmonsterrawr/">
+            <a
+              href="https://www.instagram.com/gabmonsterrawr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-instagram fa-lg"></i>
             </a>
           </div>

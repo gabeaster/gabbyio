@@ -231,9 +231,18 @@ p {
     font-size: 4rem;
     color: $light-color;
   }
-  h2 {
+  h2,
+  h3,
+  h4 {
     font-size: 2.5rem;
     color: $light-color;
+  }
+  &:hover {
+    h1,
+    h2 {
+      color: white;
+      transition: all ease-in 300ms;
+    }
   }
 }
 
