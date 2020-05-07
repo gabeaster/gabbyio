@@ -132,20 +132,27 @@
 }
 
 .paragraph-container {
-  width: 50%;
+  width: 70%;
   height: 300px;
   position: absolute;
-  top: 50%;
-  left: 32.5%;
+  top: 42%;
+  left: 22.5%;
   -webkit-transition: all ease-in 200ms;
   transition: all ease-in 200ms;
+  text-align: left;
+}
+
+.paragraph-container .center {
+  text-align: center;
 }
 
 .paragraph-container .flip-item {
   opacity: 1;
   position: absolute;
+  background-color: rgba(78, 80, 82, 0.3);
+  border-radius: 20px;
   margin: 0 auto;
-  color: #c7cdd0;
+  color: white;
   background: transparent;
   border-radius: 30px;
   padding: 10px;

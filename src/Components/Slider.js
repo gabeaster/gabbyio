@@ -3,8 +3,6 @@ import Capture from "./slideComponents/capture";
 import Todo from "./slideComponents/todo";
 import Tracker from "./slideComponents/cryptoTracker";
 function Slider() {
-  //add components to the array
-  //array for component to show inside the slider
   let sliderArr = [<Capture />, <Todo />, <Tracker />];
   const [x, setX] = useState(0);
   console.log(x);
@@ -30,13 +28,9 @@ function Slider() {
       })}
 
       <button id="back-btn" className="slide-btn" onClick={goBack}>
-        {/* <div className="selected-link A"></div>
-        <div className="selected-link D"></div> */}
         <h3>Back</h3>
       </button>
       <button id="next-btn" className="slide-btn" onClick={goNext}>
-        {/* <div className="selected-link B"></div>
-        <div className="selected-link C"></div> */}
         <h3>Next</h3>
       </button>
     </div>
