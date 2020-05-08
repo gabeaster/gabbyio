@@ -12,19 +12,21 @@
   z-index: 5;
 
   color: $light-color;
-  box-shadow: 5px 8px 15px 0px #111;
+  // box-shadow: 5px 8px 15px 0px #111;
   .overlay {
     position: sticky;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: $primary-color-overlay;
+    display: flex;
+    flex-direction: column;
   }
 
   //nav-logo
   .logo-container {
-    margin-top: 15%;
+    margin-top: 25%;
     width: 100%;
-    min-height: 325px;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,32 +36,31 @@
     }
     .tag-line {
       font-size: 1rem;
-      margin-top: 5px;
+      margin-bottom: 2%;
       text-align: center;
       font-style: italic;
       position: relative;
-      bottom: 40px;
+      // bottom: 40px;
     }
   }
 
   //nav links
   .links-container {
-    margin-top: 16%;
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
+    margin: 33% 0;
     padding-inline-start: 0px;
     .list-item {
       color: $light-color;
       width: 100%;
       text-align: center;
-      padding-bottom: 40px;
-      margin-top: 15px;
+      margin: 5% 0;
       text-decoration: none;
-      display: flex;
-      height: 25px;
-      justify-content: center;
+      // display: flex;
+      // height: 25px;
+      // justify-content: space-around;
       .active {
         color: white;
         font-weight: 900;
@@ -85,7 +86,7 @@
     display: flex;
     justify-content: space-around;
     position: fixed;
-    top: 94%;
+    bottom: 0;
     background-color: $dark-color;
     color: $secondary-color;
     width: 15%;
@@ -93,7 +94,7 @@
     div {
       width: 50px;
       height: 50px;
-      margin: 5px;
+      // margin: 5px;
 
       a {
         color: $secondary-color;
