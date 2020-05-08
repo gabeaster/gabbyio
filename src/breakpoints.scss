@@ -1,9 +1,10 @@
 $breakpoints: (
   "phone": 360px,
   "tablet": 768px,
+  "laptop": 1024px,
   "desktop": 1440px,
-  "LGdesktop": 1920px,
-) !default;
+  "LGdesktop": 1800px,
+);
 $primary-color: #2b3844;
 $primary-color-overlay: #1f13138c;
 $secondary-color: #646172;

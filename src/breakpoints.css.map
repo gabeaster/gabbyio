@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAaA,OAAO,CAAC,yEAAI;AACZ,OAAO,CAAC,0FAAI",
+    "mappings": "AAcA,OAAO,CAAC,yEAAI;AACZ,OAAO,CAAC,0FAAI",
     "sources": [
         "breakpoints.scss"
     ],
