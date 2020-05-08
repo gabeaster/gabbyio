@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Open+Sans&display=swap");
+.nav-container {
+  position: -webkit-sticky;
+  position: sticky;
+  background-image: url(../src/assets/texture6.jpg);
+  background-size: cover;
+  background-position: top left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 15%;
+  z-index: 5;
+  color: #c7cdd0;
+  -webkit-box-shadow: 5px 8px 15px 0px #111;
+          box-shadow: 5px 8px 15px 0px #111;
+}
+
+.nav-container .overlay {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  background-color: #1f13138c;
+}
+
+.nav-container .logo-container {
+  margin-top: 15%;
+  width: 100%;
+  min-height: 325px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .logo-container img {
+  width: 120%;
+}
+
+.nav-container .logo-container .tag-line {
+  font-size: 1rem;
+  margin-top: 5px;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+  bottom: 40px;
+}
+
+.nav-container .links-container {
+  margin-top: 16%;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.nav-container .links-container .list-item {
+  color: #c7cdd0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: 15px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-container .links-container .list-item .active {
+  color: white;
+  font-weight: 900;
+}
+
+.nav-container .links-container .About {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.nav-container .links-container .Work {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.nav-container .links-container .Contact {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.nav-container .links-container li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-container .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  top: 94%;
+  background-color: #000;
+  color: #646172;
+  width: 15%;
+}
+
+.nav-container .social-container div {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.nav-container .social-container div a {
+  color: #646172;
+}
+
+.nav-container .social-container div .fab {
+  position: relative;
+  top: 36%;
+  left: 31.5%;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.nav-container .social-container div .fab:hover {
+  color: #c7cdd0;
+}
+
+.nav-container .social-container .twitter .fab {
+  left: 33%;
+}
+
+.nav-container .copyright-info {
+  position: fixed;
+  bottom: 0;
+  width: 18%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=navbar.css.map */

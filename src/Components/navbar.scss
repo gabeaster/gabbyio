@@ -1,0 +1,127 @@
+@import "../breakpoints.scss";
+
+// NAVBAR
+.nav-container {
+  position: sticky;
+  background-image: url(../src/assets/texture6.jpg);
+  background-size: cover;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  z-index: 5;
+
+  color: $light-color;
+  box-shadow: 5px 8px 15px 0px #111;
+  .overlay {
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color-overlay;
+  }
+
+  //nav-logo
+  .logo-container {
+    margin-top: 15%;
+    width: 100%;
+    min-height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 120%;
+    }
+    .tag-line {
+      font-size: 1rem;
+      margin-top: 5px;
+      text-align: center;
+      font-style: italic;
+      position: relative;
+      bottom: 40px;
+    }
+  }
+
+  //nav links
+  .links-container {
+    margin-top: 16%;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px;
+    .list-item {
+      color: $light-color;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 40px;
+      margin-top: 15px;
+      text-decoration: none;
+      display: flex;
+      height: 25px;
+      justify-content: center;
+      .active {
+        color: white;
+        font-weight: 900;
+      }
+    }
+
+    .About {
+      animation-delay: 100ms;
+    }
+    .Work {
+      animation-delay: 200ms;
+    }
+
+    .Contact {
+      animation-delay: 300ms;
+    }
+    li:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  //nav-social
+  .social-container {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 94%;
+    background-color: $dark-color;
+    color: $secondary-color;
+    width: 15%;
+
+    div {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+
+      a {
+        color: $secondary-color;
+      }
+
+      .fab {
+        position: relative;
+        top: 36%;
+        left: 31.5%;
+        transform: scale(1.8);
+
+        &:hover {
+          color: $light-color;
+        }
+      }
+    }
+    .twitter {
+      .fab {
+        left: 33%;
+      }
+    }
+  }
+  //nav-copyright
+  .copyright-info {
+    position: fixed;
+    bottom: 0;
+    width: 18%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
