@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: top left;
   width: 15%;
-  z-index: 5;
+  z-index: 90000;
 
   color: $light-color;
   // box-shadow: 5px 8px 15px 0px #111;
@@ -25,11 +25,24 @@
   .logo-container {
     // margin-top: 25%;
     width: 100%;
-    // height: 25%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1210px) {
+      justify-content: unset;
+    }
+
+    @media screen and (max-width: 771px) {
+      width: 168px !important;
+      bottom: 5px !important;
+      right: 10px !important;
+    }
+    @media screen and (max-width: 500px) {
+      width: 168px;
+      bottom: 5px;
+    }
     img {
       width: 120%;
     }
@@ -50,12 +63,19 @@
     // align-items: center;
     // margin: 33% 0;
     padding-inline-start: 0px;
+
+    @media screen and (max-width: 1210px) {
+      position: relative;
+      bottom: 70px;
+    }
+
     .list-item {
       color: $light-color;
       width: 100%;
       text-align: center;
       margin: 15px 0;
       text-decoration: none;
+      z-index: 9001;
       // display: flex;
       // height: 25px;
       // justify-content: space-around;
@@ -83,15 +103,19 @@
   .social-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     bottom: 0;
     background-color: $dark-color;
     color: $secondary-color;
     width: 100%;
 
     div {
-      width: 50px;
+      width: 24%;
       height: 50px;
       // margin: 5px;
+      @media screen and (max-width: 1000px) {
+        width: 50%;
+      }
 
       a {
         color: $secondary-color;
@@ -121,5 +145,57 @@
     width: 18%;
     text-align: center;
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .tag-line {
+    display: none;
+  }
+  .social-container {
+    width: 50%;
+  }
+  .nav-container .links-container {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-container {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    .overlay {
+      height: 100%;
+      flex-direction: row;
+    }
+
+    //nav-logo
+    .logo-container {
+      width: 161px;
+      position: relative;
+      bottom: 14px;
+      justify-content: unset;
+      align-items: unset;
+      img {
+        width: 100%;
+      }
+      .tag-line {
+        display: none;
+      }
+    }
+
+    .links-container {
+      flex-direction: row;
+      width: 351px;
+      font-size: 1.2rem;
+      position: relative;
+      top: 9px;
+      right: 16px;
+    }
+
+    .social-container {
+      display: none;
+    }
   }
 }
