@@ -10,9 +10,6 @@ function About() {
     <div className="components about">
       <div className="twinkling"></div>
       <div className="clouds"></div>
-      {showHov && (
-        <p className="animated fast heartBeat hover-img ">Hover Me</p>
-      )}
 
       <div className="about-containers" id="top-container">
         <div
@@ -35,6 +32,7 @@ function About() {
               <div className="cloud-circle g"></div>
             </div>
             <div className="developer-container top-item item">Developer</div>
+            <div className="block"></div>
           </div>
 
           <div
@@ -53,6 +51,10 @@ function About() {
               <div className="cloud-circle g"></div>
             </div>
             <div className="learner-container top-item item">Leader</div>
+            {showHov && (
+              <p className="animated fast heartBeat hover-img ">Hover Me</p>
+            )}
+            <div className="block"></div>
           </div>
 
           <div
@@ -71,6 +73,7 @@ function About() {
               <div className="cloud-circle g"></div>
             </div>
             <div className="educator-container top-item item">Educator</div>
+            <div className="block"></div>
           </div>
         </div>
       </div>

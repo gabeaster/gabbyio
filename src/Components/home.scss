@@ -19,6 +19,10 @@
   background-size: cover;
   overflow: hidden;
   z-index: 1000;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .home-text {
@@ -28,6 +32,16 @@
   left: 45%;
   transform: translate(-50%, -50%);
   z-index: 3000;
+
+  @media screen and (max-width: 900px) {
+    top: 30%;
+  }
+  @media screen and (max-width: 500px) {
+    top: 31%;
+    width: 90%;
+    margin-left: 11px;
+  }
+
   h1 {
     font-size: 4rem;
     color: $light-color;

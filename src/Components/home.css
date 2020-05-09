@@ -21,6 +21,12 @@
   z-index: 1000;
 }
 
+@media screen and (max-width: 900px) {
+  .home-content {
+    width: 100%;
+  }
+}
+
 .home-text {
   text-align: left;
   position: absolute;
@@ -29,6 +35,20 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 3000;
+}
+
+@media screen and (max-width: 900px) {
+  .home-text {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-text {
+    top: 31%;
+    width: 90%;
+    margin-left: 11px;
+  }
 }
 
 .home-text h1 {

@@ -17,6 +17,10 @@
   overflow: hidden;
   box-shadow: 10px 8px 20px 0px #111;
 
+  @media screen and (max-width: 500px) {
+    left: 1.5%;
+    width: 95%;
+  }
   h2 {
     width: 100%;
     padding: 30px 0 30px 0;
@@ -33,18 +37,27 @@
     background-color: $light-color !important;
     margin-bottom: 15px;
     background-color: $primary-font;
+    @media screen and (max-width: 500px) {
+      width: 75%;
+    }
   }
   textarea {
     width: 50%;
     background-color: $light-color !important;
     margin-bottom: 15px;
     background-color: $primary-font;
+    @media screen and (max-width: 500px) {
+      width: 75%;
+    }
   }
   label {
     margin-bottom: 5px;
     text-align: left;
     width: 50%;
     font-family: $secondary-font;
+    @media screen and (max-width: 500px) {
+      width: 75%;
+    }
   }
   button {
     width: 100px;

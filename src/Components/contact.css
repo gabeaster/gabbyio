@@ -25,6 +25,13 @@
           box-shadow: 10px 8px 20px 0px #111;
 }
 
+@media screen and (max-width: 500px) {
+  .contact-form {
+    left: 1.5%;
+    width: 95%;
+  }
+}
+
 .contact-form h2 {
   width: 100%;
   padding: 30px 0 30px 0;
@@ -43,6 +50,12 @@
   background-color: "Exo", sans-serif;
 }
 
+@media screen and (max-width: 500px) {
+  .contact-form input {
+    width: 75%;
+  }
+}
+
 .contact-form textarea {
   width: 50%;
   background-color: #c7cdd0 !important;
@@ -50,11 +63,23 @@
   background-color: "Exo", sans-serif;
 }
 
+@media screen and (max-width: 500px) {
+  .contact-form textarea {
+    width: 75%;
+  }
+}
+
 .contact-form label {
   margin-bottom: 5px;
   text-align: left;
   width: 50%;
   font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-form label {
+    width: 75%;
+  }
 }
 
 .contact-form button {
